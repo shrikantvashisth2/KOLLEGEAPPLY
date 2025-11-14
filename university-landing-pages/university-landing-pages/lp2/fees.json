@@ -1,0 +1,24 @@
+{
+  "courses": [
+    {
+      "name": "B.Tech CSE",
+      "min": 90000,
+      "max": 150000
+    },
+    {
+      "name": "B.Tech ECE",
+      "min": 80000,
+      "max": 140000
+    },
+    {
+      "name": "BBA",
+      "min": 55000,
+      "max": 90000
+    },
+    {
+      "name": "MBA",
+      "min": 120000,
+      "max": 200000
+    }
+  ]
+}

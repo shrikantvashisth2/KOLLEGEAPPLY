@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sunrise Private University - Admissions 2025</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Sunrise Private University</h1>
+            <p class="tagline">NAAC A+ • Industry-focused programs • 100% placement assistance</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Overview</h2>
+            <p>Sunrise University offers a wide range of undergraduate and postgraduate programs with strong industry links and placement support.</p>
+            <div class="cta-row">
+                <button id="feesBtn">Check Course-wise Fees</button>
+                <a class="download-btn" href="#" onclick="alert('Brochure download link placeholder')">Download Brochure</a>
+                <a class="apply-btn" href="#leadForm">Apply Now</a>
+            </div>
+        </section>
+
+        <section class="form-section" id="apply">
+            <h2>Apply Now</h2>
+            <form id="leadForm">
+                <input type="text" id="name" placeholder="Full Name" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="tel" id="phone" placeholder="Phone (10-digit)" pattern="\d{10}" required />
+                <input type="text" id="state" placeholder="State" required />
+                <input type="text" id="course" placeholder="Course Interested" required />
+                <input type="number" id="year" placeholder="Intake Year (e.g., 2025)" required />
+                <label class="consent"><input type="checkbox" id="consent" /> I agree to be contacted.</label>
+                <button type="submit">Submit</button>
+                <p id="responseMsg" class="response"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="feesModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" aria-label="Close">&times;</button>
+            <h3>Course-wise Fees</h3>
+            <ul id="feesList"></ul>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Sunrise Private University — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
